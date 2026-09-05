@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: mj-global-receiving
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATA_DIR
+        value: /tmp/mj_global_receiving
+      - key: COMPANY_NAME
+        value: MJ Global Pvt Ltd
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: PORTAL_API_KEY
+        generateValue: true
+      - key: SENDER_EMAIL
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+      - key: NOTIFY_TO
+        sync: false
+      - key: NOTIFY_CC
+        sync: false

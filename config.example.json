@@ -1,0 +1,10 @@
+{
+  "company_name": "MJ Global Pvt Ltd",
+  "portal_title": "Customer Receiving Portal",
+  "sender_email": "yourgmail@gmail.com",
+  "gmail_app_password": "YOUR_16_CHARACTER_APP_PASSWORD",
+  "notify_to": "fallback@company.com",
+  "notify_cc": "",
+  "public_base_url": "https://receiving.yourdomain.com",
+  "api_key": "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET"
+}
